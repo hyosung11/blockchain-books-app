@@ -13,10 +13,17 @@ $(() => {
   $.ajax({
     // retrieves data from API, filter for three categories
     url: "https://www.googleapis.com/books/v1/volumes?q=" + search + "&key="+apiKey,
+
   }).then(
       (data) => {
-        console.log(data)
-      })
+        console.log(data.items[0])
+        // create container for
+        const container = $('<div>')
+        $('body').append(container)
+        const $blockchain = $('<p>').html(data.items[0].searchInfo.textSnippet)
+        $(container).append($blockchain)
+
+  })
 }
 
 
