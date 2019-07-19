@@ -1,9 +1,19 @@
 body {
+  font-family: baskerville;
+  margin: 0 auto;
+  max-width: 90%;
   background-color: #7E699D;
+
 }
 
-container {
-  background-image: url();
+#container {
+  background-image: url("images/blockchain-background.png");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+  
 }
 
 

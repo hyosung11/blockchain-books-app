@@ -15,7 +15,6 @@ $(() => {
   // empty contents
   $('main').empty()
 
-
   // reset button function
 
   $.ajax({
