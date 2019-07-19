@@ -17,11 +17,21 @@ $(() => {
   }).then(
       (data) => {
         console.log(data.items[0])
-        // create container for
+
+        // create container for search results
         const container = $('<div>')
         $('body').append(container)
-        const $blockchain = $('<p>').html(data.items[0].searchInfo.textSnippet)
-        $(container).append($blockchain)
+
+        // create img for blockchain search result
+        const $blockchainImg =
+          $('<img>').attr('src', data.items[0].volumeInfo.imageLinks.thumbnail)
+
+        // render
+
+
+
+          // $('<p>').html(data.items[0].searchInfo.textSnippet)
+          $(container).append($blockchainImg)
 
   })
 }
