@@ -1,3 +1,42 @@
 body {
   background-color: #7E699D;
 }
+
+container {
+  background-image: url();
+}
+
+
+body {
+  background-color: #A0AFE0;
+}
+
+/* header {
+  color: spacegray;
+} */
+
+h1 {
+  color: magenta;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+p {
+  padding: 2%;
+}
+
+form {
+  text-align: center;
+}
+
+/* img {
+  text-align: center;
+} */
+
+.button {
+  color: green;
+}
+
+#resetButton {
+  color: orange;
+}
