@@ -22,7 +22,7 @@ h1 {
 }
 
 p {
-  padding: 2%;
+  padding: 3%;
 }
 
 form {
@@ -37,6 +37,11 @@ form {
   color: green;
 }
 
-#resetButton {
+#button {
   color: orange;
+}
+
+main {
+  margin: 20px 20px;
+  padding: 5px;
 }

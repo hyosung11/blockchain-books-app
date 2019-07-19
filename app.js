@@ -1,16 +1,20 @@
+// message that file is linked to html
 console.log("connected and ready")
 
+// apiKey
 const apiKey = "AIzaSyBWqQ-M9D80N6FOQFj6XC8FwQ2_LrBHU1A"
 
 // window on load
 $(() => {
 
+  // starting variables
   const searchBooks = (event) => {
   event.preventDefault()
   const search = $(event.currentTarget).val()
-  console.log(search)
-
+  // console.log($(event.currentTarget).val())
   // empty contents
+  $('main').empty()
+
 
   // reset button function
 
@@ -24,32 +28,33 @@ $(() => {
         // loop through the list of books
         for (let i = 0; i < 10; i++) {
         // create container for search results
-        // const main = $('<div>')
-        // $('body').append(main)
-        // render img for blockchain search result
+        const results = $('<div>')
+        $('main').append(results)
+        // gets img for blockchain search result
         const $image =
           $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
-          $(main).append($image)
-        // render title of book
+          $(results).append($image)
+        // gets title of book
         const $title =
           $('<p>').html(data.items[i].volumeInfo.title) // subtitle?
-          $(main).append($title)
-        // render author(s) of book
+          $(results).append($title)
+        // gets subtitle
         const $subtitle =
           $('<p>').html(data.items[i].volumeInfo.subtitle) // subtitle?
-          $(main).append($subtitle)
+          $(results).append($subtitle)
+        // gets author info
+        const $author =
+          $('<p>').html(data.items[i].volumeInfo.authors[0])
+          $(results).append($author)
+        // gets textSnippet
+        const $textSnippet =
+          $('<p>').html(data.items[i].searchInfo.textSnippet)
+          $(results).append($textSnippet)
         }
-
-
-
-
-
-          // $('<p>').html(data.items[0].searchInfo.textSnippet)
-
-
-  })
-}
-
-    //
+    })
+  }
+    // event handler for button click
     $('.button').on('click', searchBooks)
+    // reset button
+    // code goes here
 })
