@@ -21,17 +21,23 @@ $(() => {
         // create container for search results
         const container = $('<div>')
         $('body').append(container)
-
-        // create img for blockchain search result
-        const $blockchainImg =
+        // render img for blockchain search result
+        const $image =
           $('<img>').attr('src', data.items[0].volumeInfo.imageLinks.thumbnail)
-
-        // render
+          $(container).append($image)
+        // render title of book
+        const $title =
+          $('<p>').html(data.items[0].volumeInfo.title) // subtitle?
+          $(container).append($title)
+        // render author(s) of book
+        const $subtitle =
+          $('<p>').html(data.items[0].volumeInfo.subtitle) // subtitle?
+          $(container).append($subtitle)
 
 
 
           // $('<p>').html(data.items[0].searchInfo.textSnippet)
-          $(container).append($blockchainImg)
+
 
   })
 }
