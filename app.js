@@ -23,34 +23,52 @@ $(() => {
 
   }).then(
       (data) => {
-        console.log(data.items[0])
+        // console.log(data.items[0])
         // loop through the list of books
         for (let i = 0; i < 10; i++) {
         // create container for search results
         const results = $('<div>')
         $('main').append(results)
         // gets img for blockchain search result
-        const $image =
-          $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
-          $(results).append($image)
+        console.log(data.items[i]);
+
+        if (data.items[i].volumeInfo.imageLinks === undefined) {
+          console.log("image does not exist");
+        } else {
+          const $image =
+            $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
+            $(results).append($image)
+        }
+
         // gets title of book
         const $title =
-          $('<p>').html(data.items[i].volumeInfo.title) // subtitle?
+          $('<p>').text(data.items[i].volumeInfo.title) // subtitle?
           $(results).append($title)
         // gets subtitle
         const $subtitle =
-          $('<p>').html(data.items[i].volumeInfo.subtitle) // subtitle?
+          $('<p>').text(data.items[i].volumeInfo.subtitle) // subtitle?
           $(results).append($subtitle)
         // gets author info
-        const $author =
-          $('<p>').html(data.items[i].volumeInfo.authors[0])
-          $(results).append($author)
+        const $author = $('<p>')
+          for (let j = 0; j < data.items[i].volumeInfo.authors.length; j++) {
+            $span = $('<span>')
+            if (data.items[i].volumeInfo.authors.length-1 == j) {
+              $span.html(data.items[i].volumeInfo.authors[j])
+            } else {
+              $span.html(data.items[i].volumeInfo.authors[j] + ', ')
+            }
+            $author.append($span)
+          }
+        $(results).append($author)
         // gets textSnippet
         const $textSnippet =
-          $('<p>').html(data.items[i].searchInfo.textSnippet)
+          $('<p>').html(data.items[i].searchInfo.textSnippet || 'text not available')
+          console.log($textSnippet);
           $(results).append($textSnippet)
+
         }
-    })
+      }
+    )
   }
     // event handler for button click
     $('.button').on('click', searchBooks)
