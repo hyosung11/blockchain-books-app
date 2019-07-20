@@ -44,16 +44,16 @@ $(() => {
         }
         // gets title of book
         const $title =
-          $('<p>').text(data.items[i].volumeInfo.title) // subtitle?
+          $('<p>').text(data.items[i].volumeInfo.title).addClass('title') // subtitle?
           $(results).append($title)
         // gets subtitle
         const $subtitle =
-          $('<p>').text(data.items[i].volumeInfo.subtitle) // subtitle?
+          $('<p>').text(data.items[i].volumeInfo.subtitle).addClass('subtitle') // subtitle?
           $(results).append($subtitle)
         // gets author info
         const $author = $('<p>')
           for (let j = 0; j < data.items[i].volumeInfo.authors.length; j++) {
-            $span = $('<span>')
+            $span = $('<span>').addClass('author')
             if (data.items[i].volumeInfo.authors.length-1 == j) {
               $span.html(data.items[i].volumeInfo.authors[j])
             } else {
@@ -64,7 +64,7 @@ $(() => {
         $(results).append($author)
         // gets textSnippet
         const $textSnippet =
-          $('<p>').html(data.items[i].searchInfo.textSnippet || 'text not available')
+          $('<p>').html(data.items[i].searchInfo.textSnippet || 'text not available').addClass('textSnippet')
           console.log($textSnippet);
           $(results).append($textSnippet)
 
