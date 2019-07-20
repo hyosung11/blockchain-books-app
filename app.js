@@ -14,7 +14,6 @@ $(() => {
   // console.log($(event.currentTarget).val())
   // empty contents
   $('main').empty()
-
   // reset button function
 
   $.ajax({
@@ -34,10 +33,14 @@ $(() => {
 
         if (data.items[i].volumeInfo.imageLinks === undefined) {
           console.log("image does not exist");
+          // need to create "does not exist" default image
         } else {
-          const $image = //$('<div>').addClass('img')
-            $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
+          const $image = $('<div>').addClass('img')
+
+          const $imageDiv = $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
+
             $(results).append($image)
+            $($image).append($imageDiv)
         }
         // gets title of book
         const $title =
