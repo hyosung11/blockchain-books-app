@@ -27,7 +27,7 @@ $(() => {
         // loop through the list of books
         for (let i = 0; i < 10; i++) {
         // create container for search results
-        const results = $('<div>')
+        const results = $('<div>').addClass('search')
         $('main').append(results)
         // gets img for blockchain search result
         console.log(data.items[i]);
@@ -35,7 +35,7 @@ $(() => {
         if (data.items[i].volumeInfo.imageLinks === undefined) {
           console.log("image does not exist");
         } else {
-          const $image =
+          const $image = //$('<div>').addClass('img')
             $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
             $(results).append($image)
         }
