@@ -39,7 +39,7 @@ $(() => {
           const $imageDiv = $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
             $($image).append($imageDiv)
         }
-        // gets title of book
+        // gets title of book and puts into p tag with title class
         const $title =
           $('<p>').text(data.items[i].volumeInfo.title).addClass('title') // subtitle?
           $(results).append($title)
