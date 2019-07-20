@@ -7,6 +7,35 @@ const apiKey = "AIzaSyBWqQ-M9D80N6FOQFj6XC8FwQ2_LrBHU1A"
 // window on load
 $(() => {
 
+  // grabbing More Info button
+  const $openBtn = $('#openModal')
+
+  // grabbing modal element
+  const $modal = $('#modal')
+
+  // grabbing close button
+  const $closeBtn = $('#close')
+
+  // EVENT HANDLERS
+  // event handler to open the modal
+  const openModal = () => {
+    $modal.show()
+  }
+  // event handler to close the modal
+  const closeModal = () => {
+    $modal.hide()
+  }
+
+  // EVENT LISTENERS
+  // add an event listener to More Info button
+  $openBtn.on('click', openModal)
+
+  // add an event listener to Close button
+  $closeBtn.on('click', closeModal)
+
+  setTimeout(openModal, 2000)
+
+
   // starting variables
   const searchBooks = (event) => {
   event.preventDefault()
