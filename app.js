@@ -39,7 +39,6 @@ $(() => {
             $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
             $(results).append($image)
         }
-
         // gets title of book
         const $title =
           $('<p>').text(data.items[i].volumeInfo.title) // subtitle?

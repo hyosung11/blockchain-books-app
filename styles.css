@@ -1,7 +1,7 @@
 body {
   font-family: baskerville;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 80%;
   background-color: #7E699D;
 
 }
@@ -17,9 +17,10 @@ body {
 }
 
 
-body {
+/* body {
   background-color: #A0AFE0;
-}
+
+} */
 
 /* header {
   color: spacegray;
@@ -29,6 +30,7 @@ h1 {
   color: magenta;
   text-align: center;
   justify-content: flex-end;
+  padding-top: 20px;
 }
 
 p {
@@ -54,5 +56,10 @@ form {
 
 main {
   margin: 20px 20px;
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid gold;
+}
+
+img {
+  align-items: center;
 }
