@@ -14,10 +14,10 @@ $(() => {
   // console.log($(event.currentTarget).val())
   // empty contents
   $('main').empty()
-  // reset button function
+  // reset button function?
 
   $.ajax({
-    // retrieves data from API, filter for three categories
+    // retrieves data from API, filter for categories
     url: "https://www.googleapis.com/books/v1/volumes?q=" + search + "&key="+apiKey,
 
   }).then(
@@ -28,13 +28,12 @@ $(() => {
         // create container for search results
         const results = $('<div>').addClass('search')
         $('main').append(results)
-        // gets img for blockchain search result
-        console.log(data.items[i]);
-
+        // console.log(data.items[i]);
         if (data.items[i].volumeInfo.imageLinks === undefined) {
           console.log("image does not exist");
           // need to create "does not exist" default image
         } else {
+          // gets img for search result and puts it in div with class img
           const $image = $('<div>').addClass('img')
             $(results).append($image)
           const $imageDiv = $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
@@ -73,5 +72,4 @@ $(() => {
     // event handler for button click
     $('.button').on('click', searchBooks)
     // reset button
-    // code goes here
 })
