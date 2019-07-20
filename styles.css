@@ -43,9 +43,12 @@ form {
   text-align: center;
 }
 
-/* img {
-  text-align: center;
-} */
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
 
 .button {
   color: green;

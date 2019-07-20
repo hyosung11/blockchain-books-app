@@ -36,10 +36,8 @@ $(() => {
           // need to create "does not exist" default image
         } else {
           const $image = $('<div>').addClass('img')
-
-          const $imageDiv = $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
-
             $(results).append($image)
+          const $imageDiv = $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
             $($image).append($imageDiv)
         }
         // gets title of book
