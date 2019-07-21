@@ -1,7 +1,7 @@
 body {
   font-family: baskerville;
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 90%;
   background-color: #7E699D;
 
 }
@@ -33,7 +33,7 @@ p {
   font-size: 18px;
   font-weight: bold;
   padding: 3% 15%;
-  /* line-spacing: 10px; */
+  line-height: 130%;
 
 }
 
@@ -62,16 +62,23 @@ p {
   display: none;
 }
 
+h2 {
+  color: magenta;
+  text-align: center;
+  justify-content: flex-end;
+  padding-top: 5%;
+}
+
 #modal-textbox {
   background: black;
   color: white;
-  height: 350px;
+  height: 400px;
 	width: 550px;
 	border-radius: 2px;
 	margin: 150px auto;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	padding: 2%;
-	line-height: 120%;
+	line-height: 130%;
 }
 
 .modal-footer {
@@ -108,7 +115,7 @@ form {
   background-color: black;
   display: in-line;
   width: 20%;
-  border: white;
+  /* border: white; */
   /* background-color: #4CAF50; */
   padding: 14px 28px;
   font-size: 16px;
@@ -116,19 +123,20 @@ form {
   text-align: center;
 }
 
-#button {
+/* #button {
   color: orange;
   background-color: black;
-}
+} */
 
 main {
-  margin: 20px 20px;
-  padding: 10px;
+  margin: 10% 10%;
+  padding: 20px 20px;
   /* border: 1px solid gold; */
 }
 
 .search {
   border: 1px solid red;
+  padding: 2.5%;
 }
 /*
 .img {
