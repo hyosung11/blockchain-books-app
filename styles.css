@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 95%;
+  width: 100%;
   min-height: 800px;
   margin: 0 auto;
 }
@@ -30,8 +30,23 @@ h1 {
 
 p {
   color: white;
-  padding: 3%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 3% 15%;
+  /* line-spacing: 10px; */
+
 }
+
+#openModal {
+  /* position:sticky; */
+  text-align: center;
+  /* position: absolute; */
+  /* right: 150px;
+  width: 200px;
+  height: 120px;
+  border: 3px solid green; */
+}
+
 
 #modal {
 	background-color: rgba(0,0,0,0.4);
@@ -109,7 +124,7 @@ form {
 main {
   margin: 20px 20px;
   padding: 10px;
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
 }
 
 .search {

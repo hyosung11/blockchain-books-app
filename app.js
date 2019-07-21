@@ -33,7 +33,8 @@ $(() => {
   // add an event listener to Close button
   $closeBtn.on('click', closeModal)
 
-  setTimeout(openModal, 2000)
+  // opens the modal automatically at 2000 milliseconds
+  // setTimeout(openModal, 2000)
 
 
   // starting variables
