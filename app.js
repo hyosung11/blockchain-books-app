@@ -56,8 +56,8 @@ $(() => {
         // loop through the list of books
         for (let i = 0; i < 10; i++) {
         // create container for search results
-        const results = $('<div>').addClass('search')
-        $('main').append(results)
+        const $results = $('<div>').addClass('search')
+        $('main').append($results)
         // console.log(data.items[i]);
         if (data.items[i].volumeInfo.imageLinks === undefined) {
           console.log("image does not exist");
@@ -65,18 +65,19 @@ $(() => {
         } else {
           // gets img for search result and puts it in div with class img
           const $image = $('<div>').addClass('img')
-            $(results).append($image)
+            $results.append($image)
           const $imageDiv = $('<img>').attr('src', data.items[i].volumeInfo.imageLinks.thumbnail)
             $($image).append($imageDiv)
         }
         // gets title of book and puts into p tag with title class
+        const $textDiv = $('<div>').addClass('text')
         const $title =
           $('<p>').text(data.items[i].volumeInfo.title).addClass('title') // subtitle?
-          $(results).append($title)
+            $textDiv.append($title)
         // gets subtitle
         const $subtitle =
           $('<p>').text(data.items[i].volumeInfo.subtitle).addClass('subtitle') // subtitle?
-          $(results).append($subtitle)
+            $textDiv.append($subtitle)
         // gets author info
         const $author = $('<p>')
           for (let j = 0; j < data.items[i].volumeInfo.authors.length; j++) {
@@ -88,12 +89,13 @@ $(() => {
             }
             $author.append($span)
           }
-        $(results).append($author)
+          $textDiv.append($author)
         // gets textSnippet
         const $textSnippet =
           $('<p>').html(data.items[i].searchInfo.textSnippet || 'text not available').addClass('textSnippet')
           console.log($textSnippet);
-          $(results).append($textSnippet)
+          $textDiv.append($textSnippet)
+          $results.append($textDiv)
 
         }
       }
