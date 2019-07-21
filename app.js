@@ -46,7 +46,7 @@ $(() => {
   // reset button function?
 
   $.ajax({
-    // retrieves data from API, filter for categories
+    // retrieves data from API, filters for categories
     url: "https://www.googleapis.com/books/v1/volumes?q=" + search + "&key="+apiKey,
 
   }).then(
