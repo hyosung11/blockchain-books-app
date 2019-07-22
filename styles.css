@@ -168,15 +168,15 @@ p.title {
   center;
 } */
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   body {border: 10px solid green;}
   .button {
     color: green;
     background-color: black;
     display: in-line;
     width: 200px;
-    /* border: white; */
-    padding: 14px 28px;
+    border: white; */
+    /* padding: 14px 28px;
     font-size: 1.5vw;
     cursor: pointer;
     text-align: center;
@@ -189,17 +189,21 @@ p.title {
     display: flex;
   }
 
-}
+} */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
   body {border: 10px solid blue;}
+  #container {
+    background-image: none;
+    background-color: yellow;
+  }
   .button {
     /* color: green; */
     background-color: black;
     display: in-line;
-    width: 50px;
+    width: 25%;
     /* border: white; */
-    padding: 14px 28px;
+    padding: 7px 14px;
     font-size: 1.2vw;
     cursor: pointer;
     text-align: center;
