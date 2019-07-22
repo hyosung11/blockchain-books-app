@@ -204,8 +204,8 @@ h3 {
 
 /* Desktop Version */
 @media screen and (min-width: 800px) {
-  body {border: 10px solid blue;}
-  /* #container {
+  /* body {border: 10px solid blue;}
+  /* #container { */
     /* background-image: none; */
     /* background-color: yellow; */ */
   }
@@ -226,9 +226,15 @@ h3 {
     border: 1px solid red;
     padding: 2.5%;
     display: flex;
-    min-width: 300px;
+    min-width: 95%;
+    display: flex;
   }
 
+  .img {
+    width: 48%;
+  }
+
+  .text {
+    width: 48%;
+  }
 }
-/* taken from search div - needs to be in web browser view */
-  /* display: flex; */
