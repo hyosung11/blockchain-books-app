@@ -21,3 +21,10 @@ I like to think of the following list as unsolved but not unsolveable problems:
   5. Make money by creating affiliate links for the books to Amazon, Barnes & Noble, etc.
 
 ## 6. Thoughts About Process
+As I delved into my first project I kept the following things in mind:
+  1. You are an engineer.
+  2. Slow preparation ... fast execution.
+  3. Only a part, not the whole.
+  4. Not building a wall, but making a brick.
+
+Finally, I don't know what I don't know, but I know that I know very little about software engineering at this point; however, it's a hell of a lot more than I knew a month ago.
