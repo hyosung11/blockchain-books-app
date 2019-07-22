@@ -10,7 +10,7 @@ This project uses HTML, CSS, JavaScript, jQuery, and AJAX.
 As my first project, I wanted to manifest a minimum viable product that aligns with the KISS design principle. In addition, if I could create something with a modicum of visual appeal and a smidgen of new information for the user, then I would have considered it a success because it traversed the low bar I set for myself.
 
 ## 4. Live Site Link
-- https://hyosung11.github.io/blockchain-books-app/#
+- https://hyosung11.github.io/blockchain-books-app/
 
 ## 5. Unsolved Problems
 I like to think of the following list as unsolved but not unsolveable problems:
