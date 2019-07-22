@@ -18,6 +18,6 @@ I like to think of the following list as unsolved but not unsolveable problems:
   2. Find a stock image for books that don't have a cover image.
   3. For books without certain content included in the API here are a few thoughts: 1) hard code content, 2) find other info links, or 3) include dummy text.
   4. Figure out how to concatenate words and symbols into the API data, so that for example, the author's name has "by" before their name.
-  5. Make money by creating affiliate links for the books to Amazon, B&N, etc.
+  5. Make money by creating affiliate links for the books to Amazon, Barnes & Noble, etc.
 
 ## 6. Thoughts About Process
