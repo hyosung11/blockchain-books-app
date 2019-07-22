@@ -1,16 +1,25 @@
-# blockchain-books-app
-User can search for books about blockchain, cryptocurrency and smart contracts.
+# Blockchain Book Search
 
-put stuff here
+## 1. Description
+This app takes information from the google books API and finds search results related to blockchain technology in the categories of blockchain, cryptocurrency, and smart contracts.
 
-1. explanation of technologies used
+## 2. Technologies Used
+This project uses HTML, CSS, JavaScript, jQuery, and AJAX.
 
-2. the approach taken
+## 3. Approach Taken
+As my first project, my priority is manifesting something functional and
 
-3. a link to your live site
 
-4. installation instructions
 
-5. unsolved problems
 
-6. anything else
+
+
+
+
+## 4. a link to your live site
+
+## 5. installation instructions
+
+## 6. unsolved problems
+
+## 7. anything else

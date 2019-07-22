@@ -36,7 +36,6 @@ $(() => {
   // opens the modal automatically at 2000 milliseconds
   // setTimeout(openModal, 2000)
 
-
   // starting variables
   const searchBooks = (event) => {
   event.preventDefault()
