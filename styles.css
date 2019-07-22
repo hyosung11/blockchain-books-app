@@ -1,6 +1,4 @@
-@@media screen and (min-width: 600px) {
-  border: 1px solid green;
-}
+
 
 body {
   font-family: baskerville;
@@ -169,3 +167,49 @@ p.title {
 .img {
   center;
 } */
+
+@media screen and (min-width: 900px) {
+  body {border: 10px solid green;}
+  .button {
+    color: green;
+    background-color: black;
+    display: in-line;
+    width: 200px;
+    /* border: white; */
+    padding: 14px 28px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .search {
+    border: 1px solid red;
+    padding: 2.5%;
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  body {border: 10px solid blue;}
+  .button {
+    /* color: green; */
+    background-color: black;
+    display: in-line;
+    width: 50px;
+    /* border: white; */
+    padding: 14px 28px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .search {
+    border: 1px solid red;
+    padding: 2.5%;
+    display: flex;
+    min-width: 200px;
+  }
+
+}
