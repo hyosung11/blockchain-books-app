@@ -72,7 +72,7 @@ $(() => {
         // gets title of book and puts into p tag with title class
         const $textDiv = $('<div>').addClass('text')
         const $title =
-          $('<p>').text(data.items[i].volumeInfo.title).addClass('title') // subtitle?
+          $('<h3>').text(data.items[i].volumeInfo.title).addClass('title') // subtitle?
             $textDiv.append($title)
         // gets subtitle
         const $subtitle =
