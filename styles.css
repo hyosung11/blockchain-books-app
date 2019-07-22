@@ -140,6 +140,7 @@ form {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+  margin: 0 auto;
 }
 
 /* #button {
