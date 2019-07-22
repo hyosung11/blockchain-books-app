@@ -52,10 +52,10 @@ p {
   background-color: rgba(0,0,0,0.4);
   /* background-color: black; */
   position: fixed;
-	top: 0;
+	top: 5%;
 	left: 0;
-	height: 50%;
-	width: 33%;
+	height: 100%;
+	width: 100%;
   /*This puts the modal in front of the body (which has a default z-index setting of `0`*/
 	z-index: 1;
 	overflow: auto;
@@ -73,7 +73,7 @@ h2 {
 #modal-textbox {
   background: #06031D;
   color: #ffc125;
-  height: 33%;
+  height: 50%;
 	width: 40%;
 	border-radius: 5px;
 	margin: 5% auto;
