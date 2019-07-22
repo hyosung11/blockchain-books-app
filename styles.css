@@ -1,5 +1,5 @@
-@@media @media screen and (min-width: 800px) {
-  /*  */
+@@media screen and (min-width: 600px) {
+  border: 1px solid green;
 }
 
 body {
@@ -28,17 +28,18 @@ body {
 h1 {
   color: magenta;
   text-align: center;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   padding-top: 5%;
-  font-size: 40px:
+  font-size: 50px;
 }
 
 p {
-  color: gold;
+  /* color: gold; */
+  color: #ffc125;
   font-size: 18px;
   font-weight: bold;
   padding: 2% 20%;
-  line-height: 130%;
+  line-height: 150%;
   text-align: left;
 
 }
@@ -78,12 +79,14 @@ h2 {
   color: magenta;
   text-align: center;
   justify-content: flex-end;
+  /* justify-content: space-between; */
   padding-top: 5%;
 }
 
 #modal-textbox {
   background: black;
-  color: gold;
+  /* color: gold; */
+  color: #ffc125;
   height: 500px;
 	width: 550px;
 	border-radius: 5px;
